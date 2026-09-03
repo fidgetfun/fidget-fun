@@ -1,14 +1,15 @@
-# Fidget Fun holding page
+# Fidget Fun GitHub Pages site
 
-A simple static holding page for **Fidget Fun**, designed to run for free on GitHub Pages.
+This folder is ready to upload to the `fidget-fun` GitHub repository.
+
+## Files
+- `index.html` — holding/home page
+- `products.html` — product flyer and email order buttons
+- `404.html` — fallback page
+- `assets/fidget-fun-logo.png` — logo
+- `assets/fidget-fun-products.png` — current product flyer
 
 ## Publish on GitHub Pages
+Upload the **contents of this folder** to the root of your GitHub repository. Then go to **Settings → Pages → Deploy from a branch**, select **main** and **/(root)**, and save.
 
-1. Create a GitHub repository named `fidget-fun`.
-2. Upload everything in this folder to the repository root.
-3. In GitHub, open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)`, then click **Save**.
-6. After GitHub finishes deploying, the site will be available at your GitHub Pages address.
-
-Contact email used on the page: `fidget.fun@icloud.com`.
+The product buttons use `mailto:` links addressed to `fidget.fun@icloud.com`. They open the visitor's email app with the product name, price, colour and quantity fields pre-filled.
