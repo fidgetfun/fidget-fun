@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#c8e7ff" />
+  <meta name="description" content="Fidget Fun 3D printed fidgets — browse our current products and email to order." />
+  <title>Fidget Fun | Products</title>
+  <style>
+    :root {
+      --baby-blue:#c8e7ff; --baby-blue-deep:#8cc8f4; --dust-pink:#eeb6c5;
+      --dust-pink-soft:#f8dce4; --violet:#7b55c7; --violet-deep:#5634a2;
+      --ink:#352d45; --white:#fffdfd;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; color:var(--ink);
+      font-family:ui-rounded,"SF Pro Rounded","Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+      background:linear-gradient(145deg,#eaf7ff 0%,#f9e8ed 48%,#eee7ff 100%);
+    }
+    a{color:inherit}
+    .shell{width:min(1180px,calc(100% - 28px));margin:0 auto;padding:22px 0 46px}
+    .topbar{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;
+      padding:12px 16px;margin-bottom:20px;border:1px solid rgba(255,255,255,.9);
+      border-radius:22px;background:rgba(255,255,255,.72);backdrop-filter:blur(16px);
+      box-shadow:0 16px 38px rgba(74,53,112,.09)
+    }
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;color:var(--violet-deep)}
+    .brand img{width:50px;height:50px;object-fit:cover;border-radius:14px}
+    .home{padding:10px 14px;border-radius:12px;text-decoration:none;background:var(--dust-pink-soft);font-weight:800;color:var(--violet-deep)}
+    .intro{text-align:center;padding:8px 12px 22px}
+    .intro h1{margin:0;color:var(--violet-deep);font-size:clamp(36px,6vw,64px);letter-spacing:-.04em}
+    .intro p{margin:10px auto 0;max-width:650px;line-height:1.55;color:#5f5670}
+    .layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);gap:24px;align-items:start}
+    .flyer,.order-panel{
+      border:1px solid rgba(255,255,255,.9);background:rgba(255,255,255,.72);
+      border-radius:28px;box-shadow:0 22px 55px rgba(74,53,112,.12);overflow:hidden
+    }
+    .flyer{padding:10px}
+    .flyer img{display:block;width:100%;height:auto;border-radius:20px}
+    .order-panel{padding:22px;position:sticky;top:18px}
+    .order-panel h2{margin:0 0 7px;color:var(--violet-deep);font-size:29px}
+    .order-panel>.sub{margin:0 0 18px;color:#6c6277;line-height:1.5}
+    .item{padding:18px 0;border-top:1px solid rgba(123,85,199,.14)}
+    .product-thumb{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:18px;margin:0 0 14px;background:#171522;box-shadow:0 10px 24px rgba(74,53,112,.12)}
+    .item:first-of-type{border-top:0}
+    .item-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+    .item h3{margin:0;font-size:20px;color:#45338c;line-height:1.2}
+    .price{flex:0 0 auto;padding:5px 10px;border-radius:999px;background:var(--dust-pink-soft);color:var(--violet-deep);font-weight:900}
+    .desc{margin:7px 0 13px;color:#655c70;font-size:14px;line-height:1.45}
+    .order{
+      display:flex;align-items:center;justify-content:center;min-height:45px;width:100%;padding:0 16px;
+      border-radius:14px;background:linear-gradient(135deg,var(--violet),var(--violet-deep));
+      color:#fff;text-decoration:none;font-weight:900;box-shadow:0 8px 20px rgba(86,52,162,.2);
+      transition:transform .18s ease,box-shadow .18s ease
+    }
+    .order:hover,.order:focus-visible{transform:translateY(-2px);box-shadow:0 12px 24px rgba(86,52,162,.28)}
+    .order:focus-visible,.home:focus-visible,.brand:focus-visible{outline:3px solid var(--baby-blue-deep);outline-offset:3px}
+    .note{margin:18px 0 0;padding:14px;border-radius:16px;background:rgba(200,231,255,.48);font-size:13px;line-height:1.5;color:#61576d}
+    footer{text-align:center;padding:30px 10px 0;color:#756b80;font-size:13px}
+    footer a{color:var(--violet-deep);font-weight:800;text-decoration:none}
+    @media(max-width:820px){
+      .layout{grid-template-columns:1fr}.order-panel{position:static}.shell{width:min(100% - 20px,720px)}
+    }
+    @media(max-width:480px){.topbar{align-items:flex-start}.brand span{display:none}.order-panel{padding:18px}.flyer{padding:6px}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="index.html"><img src="assets/fidget-fun-logo.png" alt="Fidget Fun logo"><span>Fidget Fun</span></a>
+      <a class="home" href="index.html">← Home</a>
+    </header>
+
+    <section class="intro">
+      <h1>Choose your fidget</h1>
+      <p>Tap an order button and your email app will open with the item name and price already filled in. Just add your preferred colour and any questions before sending.</p>
+    </section>
+
+    <main class="layout">
+      <section class="flyer" aria-label="Fidget Fun product flyer">
+        <img src="assets/fidget-fun-products.png" alt="Fidget Fun 3D printed fidgets flyer showing the Infinity Cube for £3, Impossible Spiral Cone for £4 and Hexagon Fractal Keyring for £3.">
+      </section>
+
+      <aside class="order-panel" aria-label="Order links">
+        <h2>Order by email</h2>
+        <p class="sub">Available in white, black and multi-coloured. Choose an item below.</p>
+
+        <article class="item">
+          <img class="product-thumb" src="assets/infinity-cube.png" alt="Infinity Cube 3D printed fidget toy">
+          <div class="item-head"><h3>1. Infinity Cube</h3><span class="price">£3</span></div>
+          <p class="desc">An endlessly fun fidget toy that flips and folds for non-stop action.</p>
+          <a class="order" href="mailto:fidget.fun@icloud.com?subject=Order%20enquiry%3A%20Infinity%20Cube%20%E2%80%93%20%C2%A33&amp;body=Hi%20Fidget%20Fun%2C%0A%0AI%27d%20like%20to%20order%20an%20Infinity%20Cube%20%E2%80%93%20%C2%A33.%0A%0AColour%20%28white%2Fblack%2Fmulti-coloured%29%3A%20%0AQuantity%3A%20%0A%0AThanks%21">Email to order — £3</a>
+        </article>
+
+        <article class="item">
+          <img class="product-thumb" src="assets/impossible-spiral-cone.png" alt="Impossible Spiral Cone 3D printed fidget toy">
+          <div class="item-head"><h3>2. Impossible Spiral Cone</h3><span class="price">£4</span></div>
+          <p class="desc">50mm high with a mesmerising spiral design.</p>
+          <a class="order" href="mailto:fidget.fun@icloud.com?subject=Order%20enquiry%3A%20Impossible%20Spiral%20Cone%20%E2%80%93%20%C2%A34&amp;body=Hi%20Fidget%20Fun%2C%0A%0AI%27d%20like%20to%20order%20an%20Impossible%20Spiral%20Cone%20%E2%80%93%20%C2%A34.%0A%0AColour%20%28white%2Fblack%2Fmulti-coloured%29%3A%20%0AQuantity%3A%20%0A%0AThanks%21">Email to order — £4</a>
+        </article>
+
+        <article class="item">
+          <img class="product-thumb" src="assets/hexagon-fractal-keyring.png" alt="Hexagon Fractal Keyring 3D printed fidget toy">
+          <div class="item-head"><h3>3. Hexagon Fractal Keyring</h3><span class="price">£3</span></div>
+          <p class="desc">Intricate fractal design in a hexagon shape, ideal as a keyring or pocket fidget.</p>
+          <a class="order" href="mailto:fidget.fun@icloud.com?subject=Order%20enquiry%3A%20Hexagon%20Fractal%20Keyring%20%E2%80%93%20%C2%A33&amp;body=Hi%20Fidget%20Fun%2C%0A%0AI%27d%20like%20to%20order%20a%20Hexagon%20Fractal%20Keyring%20%E2%80%93%20%C2%A33.%0A%0AColour%20%28white%2Fblack%2Fmulti-coloured%29%3A%20%0AQuantity%3A%20%0A%0AThanks%21">Email to order — £3</a>
+        </article>
+
+        <p class="note"><strong>Please note:</strong> each item is 3D printed, so there may be slight variations in appearance.</p>
+      </aside>
+    </main>
+
+    <footer>Orders &amp; enquiries: <a href="mailto:fidget.fun@icloud.com">fidget.fun@icloud.com</a> · © <span id="year"></span> fidget-fun</footer>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
