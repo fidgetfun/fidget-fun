@@ -1,15 +1,20 @@
-# Fidget Fun GitHub Pages site
+# Fidget Fun GitHub Pages
 
-This folder is ready to upload to the `fidget-fun` GitHub repository.
+Upload the CONTENTS of this folder to the root of your GitHub repository.
 
-## Files
-- `index.html` — holding/home page
-- `products.html` — product flyer and email order buttons
-- `404.html` — fallback page
-- `assets/fidget-fun-logo.png` — logo
-- `assets/fidget-fun-products.png` — current product flyer
+Required files:
+- index.html
+- products.html
+- 404.html
+- assets/
 
-## Publish on GitHub Pages
-Upload the **contents of this folder** to the root of your GitHub repository. Then go to **Settings → Pages → Deploy from a branch**, select **main** and **/(root)**, and save.
+GitHub Pages:
+Settings → Pages → Deploy from a branch → main → /(root)
 
-The product buttons use `mailto:` links addressed to `fidget.fun@icloud.com`. They open the visitor's email app with the product name, price, colour and quantity fields pre-filled.
+Products:
+- Halloween Spiral Cones: 1 for £2 or 2 for £3
+- Pumpkin Fidget: £1
+- Hexagon Fractal Keyring: £1.50
+- Halloween Fidget Cube: £2
+
+Order email: fidget.fun@icloud.com
